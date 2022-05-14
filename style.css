@@ -1,0 +1,88 @@
+:root {
+  /*colores*/
+
+  /*Primario*/
+  --Strong-cyan: hsl(172, 67%, 45%);
+
+  /*Neutral*/
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Space Mono", monospace;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--Light-grayish-cyan);
+}
+header {
+  width: 100%;
+  height: 143px;
+  display: flex;
+}
+header img {
+  margin: 49px auto;
+  width: 87px;
+  height: 54px;
+}
+.main_section {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--White);
+  border-radius: 22px 22px 0 0;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+label {
+  width: 100%;
+  font-family: "Space Mono", monospace;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--Dark-grayish-cyan);
+}
+.main_section_input_bill {
+  margin-top: 32px;
+  width: 83%;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.main_section__number_people {
+  display: flex;
+  flex-direction: column;
+  background-color: blue;
+}
+input {
+  width: 100%;
+  height: 53%;
+  border: 0;
+  border-radius: 3px;
+  background-color: var(--Very-light-grayish-cyan);
+}
+input[type="text"] {
+  background-image: url("./images/icon-dollar.svg");
+  background-position: 20px 50%;
+  background-repeat: no-repeat;
+  color: var(--Very-dark-cyan);
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+  padding-right: 17px;
+}
