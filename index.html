@@ -18,16 +18,38 @@
       <img src="./images/logo.svg" alt="" />
     </header>
     <section class="main_section">
-      <section class="main_section_input_bill">
-        <label for="">Bill</label>
-        <input type="text" class="input_bill" />
+      <section class="main_section_inputs">
+        <section class="main_section_input_bill">
+          <label for="">Bill</label>
+          <input type="text" class="input input_bill" />
+        </section>
+        <section class="main_section_select_tip">
+          <label for="">Select Tip %</label>
+          <section class="tip_button">
+            <button class="button tip_button_select">5%</button>
+            <button class="button tip_button_select">10%</button>
+            <button class="button tip_button_select active">15%</button>
+            <button class="button tip_button_select">25%</button>
+            <button class="button tip_button_select">50%</button>
+            <input type="number" class="input_custom" placeholder="Custom" />
+          </section>
+        </section>
+        <section class="main_section__number_people">
+          <label for="">Number of People</label>
+          <input type="number" class="input input_number_people" />
+        </section>
       </section>
-      <section class="main_section_select_tip">
-        <label for="">Select Tip %</label>
-      </section>
-      <section class="main_section__number_people">
-        <label for="">Number of People</label>
-        <input type="text" />
+      <section class="second_section_results">
+        <section class="sub_section">
+          <div class="left left_amount">Tip Amount <span> / person</span></div>
+          <p class="right">$4.27</p>
+        </section>
+        <section class="sub_section">
+          <div class="left left_amount">Total <span> / person</span></div>
+          <p class="right">$32.79</p>
+        </section>
+
+        <button class="button button_reset">RESET</button>
       </section>
     </section>
   </body>
