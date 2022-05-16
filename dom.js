@@ -6,7 +6,7 @@ const btnReset = document.querySelector(".button_reset");
 let result = document.querySelector(".right_amount");
 bill.addEventListener("input", setBillValue);
 inputNumber.addEventListener("input", setInputNumberValue);
-inputCustom.addEventListener("input", setInputCustom);
+inputCustom.addEventListener("input", setInputCustomValue);
 console.log(result.innerHTML);
 var setBill = 0.0;
 var setTipValue = 0.15;
@@ -24,12 +24,13 @@ function setInputNumberValue() {
   console.log(setInputNumber);
   resultsTips();
 }
-function setInputCustom() {
-  setInputCustom = inputCustom.value;
+function setInputCustomValue() {
+  setInputCustom = inputCustom.value / 100;
   console.log(setInputCustom);
   tipsBtn.forEach((btn) => {
     btn.classList.remove("active");
   });
+  resultsTipsCustom();
 }
 
 tipsBtn.forEach((btn) => {
@@ -62,6 +63,17 @@ function resetScreen() {
 */
 function resultsTips() {
   let right_amount = (setBill * setTipValue) / setInputNumber;
+  console.log(right_amount);
+  document.querySelector(".right_amount").innerHTML =
+    "$" + right_amount.toFixed(2);
+
+  let right_person = setBill / setInputNumber + right_amount;
+  document.querySelector(".right_person").innerHTML =
+    "$" + right_person.toFixed(2);
+}
+
+function resultsTipsCustom() {
+  let right_amount = (setBill * setInputCustom) / setInputNumber;
   console.log(right_amount);
   document.querySelector(".right_amount").innerHTML =
     "$" + right_amount.toFixed(2);
