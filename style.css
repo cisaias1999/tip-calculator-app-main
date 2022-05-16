@@ -246,11 +246,13 @@ p {
   }
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1024px) {
   body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--Light-grayish-cyan);
+    height: 800px;
   }
   .main_section {
     display: flex;
