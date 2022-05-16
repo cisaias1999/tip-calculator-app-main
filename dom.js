@@ -49,7 +49,7 @@ function setTipsBtn(event) {
     }
   });
 }
-/*
+
 btnReset.addEventListener("click", resetScreen);
 
 function resetScreen() {
@@ -59,8 +59,8 @@ function resetScreen() {
   tipsBtn.forEach((btn) => {
     btn.classList.remove("active");
   });
-} 
-*/
+}
+
 function resultsTips() {
   let right_amount = (setBill * setTipValue) / setInputNumber;
   console.log(right_amount);
