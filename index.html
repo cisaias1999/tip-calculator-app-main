@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="stylesheet" href="./style.css" />
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
@@ -22,7 +23,10 @@
         <section class="main_section_input_bill">
           <label for="">
             Bill
-            <input type="number" class="input input_bill"
+            <input
+              type="number"
+              pattern="^[0-9]+(.[0-9]+)?$"
+              class="input input_bill"
           /></label>
         </section>
         <section class="main_section_select_tip">
@@ -61,4 +65,5 @@
       </section>
     </section>
   </body>
+  <script src="./dom.js"></script>
 </html>
